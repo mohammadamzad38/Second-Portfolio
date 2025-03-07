@@ -204,11 +204,14 @@ section{
     margin-bottom: 1rem;
 }
 .grid-card span{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
     background-clip: text;
     color: transparent;
+}
+.grid-cad h3{
+    font-size: 2rem;
 }
 ::-webkit-scrollbar{
     width: 20px;
@@ -218,4 +221,48 @@ section{
 }
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(to top, rgb(66, 83, 94), rgba(72, 95, 29, 0.637));
+}
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.project h2{
+    font-size: 2rem;
+    margin-bottom: 70px;
+}
+.project-card{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.project-card:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-10px)scale(1.02);
+}
+.project-card img{
+    width: 20vw;
+    border-radius: 1rem;
+}
+.project-card:hover .btn{
+    border: 2px solid white;
+    color: white;
+}
+.project-card:hover .btn:hover{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+.project-card h3{
+    font-size: 2rem;
+    font-weight: 500;
 }
