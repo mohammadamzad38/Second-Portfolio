@@ -6,6 +6,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
   list-style: none;
+  background-color: black;
 }
 header {
   position: fixed;
@@ -115,25 +116,27 @@ section{
     font-size: 1.8rem;
     font-weight: 500;
     opacity: 0.8;
+    color: white;
 }
 .info-box h1{
     font-size: 4rem;
     font-weight: 600;
+    color: white;
 }
 .info-box span{
-    background: linear-gradient(to right, rgb(0, 157, 255), rgb(39, 95, 83));
-    background-clip: text;
-    color: transparent;
+    color: white;
     font-size: 2rem;
 }
 .btn-group{
     display: flex;
     gap: 3rem;
+    margin-bottom: 2rem;
 }
 .btn{
     border-radius: 1rem;
     padding: 0.8rem;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 252, 252);
+    color: white;
     cursor: pointer;
     font-weight: 500;
     text-wrap: nowrap;
@@ -141,8 +144,8 @@ section{
     
 }
 .btn:hover{
-    background-color: black;
-    color: white;
+    background-color: rgb(247, 247, 247);
+    color: rgb(0, 0, 0);
     transform: scale(1.4);
 }
 .social{
@@ -150,18 +153,23 @@ section{
     gap: 2rem;
 }
 .social i{
-    font-size: 2.5rem;
+    background-color: white;
+    font-size: 3rem;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    padding: 1rem;
+    border-radius: 50%;
     
 }
 .social i:hover{
-    transform: scale(1.80);
+    
+    transform: scale(1.4);
 }
 
 /* Section 02 */
 
 .section-title{
+    color: white;
     text-align: center;
     font-size: 4rem;
     font-weight: 600;
@@ -183,7 +191,8 @@ section{
     gap: 2rem;
 }
 .grid-card{
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
     border-radius: 3rem;
     padding: 3rem;
     display: flex;
@@ -196,19 +205,18 @@ section{
 }
 .grid-card:hover{
     transform: scale(1.02s);
-    background-color: rgba(0, 0, 0, 0.774);
+    background-color: rgba(248, 248, 248, 0.432);
     color: white;
 }
 .grid-cad i{
+    background-color: rgba(248, 248, 248, 0.432);
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 .grid-card span{
     font-size: 2rem;
     font-weight: 500;
-    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
-    background-clip: text;
-    color: transparent;
+    color: white;
 }
 .grid-cad h3{
     font-size: 2rem;
