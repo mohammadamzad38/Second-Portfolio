@@ -188,7 +188,7 @@ section{
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 3rem;
 }
 .grid-card{
     border: 2px solid rgb(255, 255, 255);
@@ -204,9 +204,10 @@ section{
     transition: 0.2s ease-in-out;
 }
 .grid-card:hover{
-    transform: scale(1.02s);
-    background-color: rgba(248, 248, 248, 0.432);
+    transform: translateX(-10px) scale(1.04);
     color: white;
+    background-color: black;
+
 }
 .grid-cad i{
     background-color: rgba(248, 248, 248, 0.432);
@@ -230,14 +231,19 @@ section{
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(to top, rgb(66, 83, 94), rgba(72, 95, 29, 0.637));
 }
+
+/* Project */
+
+
 .projects-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 3rem;
 }
 .project h2{
     font-size: 2rem;
     margin-bottom: 70px;
+    color: white;
 }
 .project-card{
     padding: 3rem 2rem;
@@ -247,7 +253,7 @@ section{
     justify-content: center;
     text-align: center;
     gap: 1.5rem;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -255,7 +261,10 @@ section{
 .project-card:hover{
     background-color: black;
     color: white;
-    transform: translateY(-10px)scale(1.02);
+    transform: translateY(-10px)scale(1.04);
+}
+.project-card:hover p:hover h3:hover{
+    color: white;
 }
 .project-card img{
     width: 20vw;
@@ -273,6 +282,10 @@ section{
 .project-card h3{
     font-size: 2rem;
     font-weight: 500;
+    color: rgb(156, 157, 158);
+}
+.project-card p{
+    color: rgb(196, 191, 191);
 }
 .input-box{
     display: flex;
@@ -285,7 +298,7 @@ section{
 }
 .input-box input{
     border-radius: 3rem;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     padding: 2rem 8rem;
     font-size: 3rem;
 }
@@ -301,11 +314,12 @@ section{
     top: 50%;
     left: 10px;
     transform: translate(50%, -50%);
+    color: white;
 }
 footer{
     bottom: 0;
     left: 0;
-    height: 10rem;
+    height: 5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -317,14 +331,18 @@ footer ul{
     display: flex;
     align-items: center;
     gap: 3rem;
+    
 }
 footer ul li a{
     color: black;
     font-weight: 600;
+    color: white;
 }
 .copyright{
     font-size: 300;
     margin-top: 2rem;
+    color: white;
+    padding-bottom: 2rem;
 }
 
 
